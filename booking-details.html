@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/booking-details.css">
+</head>
+
+<body>
+    <!-- top bar -->
+    <div class="d-flex justify-content-between header-main">
+        <div class="header-main-section1 d-flex align-items-center">
+            <p class="header-main-text">
+                Trusted Local Services, Right When You Need Them.
+            </p>
+        </div>
+        <div class="header-main-section2 d-flex align-items-center">
+            <select name="location" id="location">
+                <option value="location">location</option>
+            </select>
+            <p>Help & Support</p>
+            <a href="#"> work with Us </a>
+        </div>
+    </div>
+
+    <!-- starting Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Frame 14.png" alt="logo-image" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="circle">
+                    <div class="search-box">
+                        <input type="search" id="searchInput" placeholder="Search...">
+
+                        <button id="searchBtn">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 15L22 22M9.16667 17.3333C4.65634 17.3333 1 13.677 1 9.16667C1 4.65634 4.65634 1 9.16667 1C13.677 1 17.3333 4.65634 17.3333 9.16667C17.3333 13.677 13.677 17.3333 9.16667 17.3333Z"
+                                    stroke="#1A3151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="circle">
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 22.167C21 19.5897 17.866 17.5003 14 17.5003C10.134 17.5003 7 19.5897 7 22.167M14 14.0003C11.4227 14.0003 9.33333 11.911 9.33333 9.33366C9.33333 6.75633 11.4227 4.66699 14 4.66699C16.5773 4.66699 18.6667 6.75633 18.6667 9.33366C18.6667 11.911 16.5773 14.0003 14 14.0003Z"
+                                stroke="#1A3151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="circle">
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.5 3.5H3.81307C4.36581 3.5 4.64267 3.5 4.86811 3.59972C5.06688 3.68765 5.23683 3.82921 5.35937 4.00871C5.49814 4.21197 5.54825 4.48338 5.64827 5.02515L8.16671 18.6667L20.3254 18.6667C20.8542 18.6667 21.1194 18.6667 21.3384 18.5732C21.5318 18.4907 21.6987 18.3571 21.8226 18.1871C21.9627 17.9949 22.0221 17.7376 22.1407 17.2236L22.1416 17.22L23.9724 9.28662L23.9728 9.28496C24.1527 8.50518 24.2429 8.11435 24.1439 7.80778C24.057 7.53879 23.8741 7.31073 23.6315 7.16557C23.3549 7 22.9551 7 22.1535 7H6.41667M21 24.5C20.3557 24.5 19.8333 23.9777 19.8333 23.3333C19.8333 22.689 20.3557 22.1667 21 22.1667C21.6443 22.1667 22.1667 22.689 22.1667 23.3333C22.1667 23.9777 21.6443 24.5 21 24.5ZM9.33333 24.5C8.689 24.5 8.16667 23.9777 8.16667 23.3333C8.16667 22.689 8.689 22.1667 9.33333 22.1667C9.97767 22.1667 10.5 22.689 10.5 23.3333C10.5 23.9777 9.97767 24.5 9.33333 24.5Z"
+                                stroke="#1A3151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <a href="#" class="cmn-btn">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- body part -->
+    </main>
+
+    <!-- footer starts -->
+    <footer class="footer">
+        <div class="container">
+            <!-- footer-top -->
+
+            <div class="row align-items-center footer-top text-center text-lg-start">
+                <!-- footer-logo -->
+
+                <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./images/footer-logo.png" alt="footer-logo" loading="lazy" />
+                    </a>
+                </div>
+
+                <!-- Newsletter -->
+
+                <div class="col-lg-7">
+                    <div class="newsletter text-center text-lg-start">
+                        <div class="footer-heading">Stay Updated</div>
+
+                        <p>
+                            Get the latest service offers, home care tips, and exclusive
+                            discounts delivered straight to your inbox.
+                        </p>
+
+                        <form class="newsletter-form d-flex align-items-center" action="#">
+                            <input type="email" name="email" placeholder="Email Address.." required />
+
+                            <button type="submit">
+                                <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 8H17.3333M10.3333 15L17.3333 8L10.3333 1" stroke="#111827"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-middle -->
+
+            <div class="row footer-middle">
+                <!-- Contact -->
+
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="foot-head">Contact Info</div>
+
+                    <ul class="footer-links">
+                        <li class="address">
+                            28 Park Street, Kolkata, West Bengal India - 700016
+                        </li>
+                    </ul>
+
+                    <div class="foot-head support-head">Support Care</div>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="tel:+6121234456"> +(612) 123-4456 </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <div class="foot-head">Pages</div>
+
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+
+                        <li><a href="#">About</a></li>
+
+                        <li><a href="#">Service</a></li>
+
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <div class="foot-head">Services</div>
+
+                    <ul class="footer-links">
+                        <li><a href="#">house help</a></li>
+
+                        <li><a href="#">house cleaning</a></li>
+
+                        <li><a href="#">electrical services</a></li>
+
+                        <li><a href="#">plumbing</a></li>
+
+                        <li><a href="#">home repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="foot-head">Company</div>
+
+                    <ul class="footer-links">
+                        <li><a href="#">help & support</a></li>
+
+                        <li><a href="#">FAQ's</a></li>
+
+                        <li><a href="#">privacy policy</a></li>
+
+                        <li><a href="#">terms & conditions</a></li>
+
+                        <li><a href="#">refund policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- footer-bottom -->
+
+            <div class="row footer-bottom align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="footer-title">
+                        Making Everyday Services
+
+                        <span> Simple & Reliable </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="footer-end">
+                        <div class="copyright">
+                            ©2026 <a href="./index.html">FIXNOW</a>. All Rights Reserved.
+                        </div>
+
+                        <div class="footer-social">
+                            <a href="#">Facebook</a>
+
+                            <a href="#">Twitter</a>
+
+                            <a href="#">Youtube</a>
+
+                            <a href="#">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <!-- bootstrap  js -->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
