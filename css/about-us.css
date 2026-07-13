@@ -13,15 +13,19 @@
     --color12: #45A5EC;
     --color13: #D97706;
     --color-14: #F0F9FE;
-    --color-15: #F59E0B;
-    --color-16: #FBBF24;
+    --color-15: #F59E0B; 
+    --color-16:#FBBF24;
     --outfit-r: "outfit";
     --albert-sans-r: "albert-sans-r";
 }
-
-.about-us-banner {
+.about-us-banner{
     background:
-        linear-gradient(rgba(26, 49, 81, .55), rgba(26, 49, 81, .40)),
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.32) 0%,
+            rgba(255, 255, 255, 0.274) 50%,
+            rgba(255,255,255) 100%
+        ),
         url("../images/2.hero.png");
 
     background-size: cover;
@@ -29,520 +33,816 @@
     min-height: 650px;
 }
 
-.about-us-banner::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 180px;
-    background: linear-gradient(to bottom,
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, .20),
-            rgba(255, 255, 255, .60),
-            rgba(255, 255, 255, .90),
-            #ffffff);
 
-    z-index: 1;
-}
-
-.about-us-banner .heading-1 {
+.about-us-banner .heading-1{
     color: var(--color2);
 }
-
-.about-us-banner p {
+.about-us-banner p{
     color: var(--color-16);
-    font-size: 32px;
+    font-size: 32px; 
     font-family: var(--outfit-r);
 }
-
 /* second section  */
-.about-fixnow img {
+.about-fixnow img{
     border-radius: 20px;
-    width: 449px;
+    width: 449px; 
     min-height: 500px;
-}
-
-.about-fixnow-sub-head {
+} 
+.about-fixnow-sub-head{
     color: var(--color-16);
 }
-
-.about-text {
+.about-text{
     font-family: var(--albert-sans-r);
     font-size: 18px;
     margin-left: 12.5px;
+} 
+.cmn-btn1{
+    width:318px;
+    min-height:117px;
+    background:#F4F1EC;
+    border-radius:20px;
+    padding:25px;
 }
 
-.cmn-btn1 {
-    width: 318px;
-    min-height: 117px;
-    background: #F4F1EC;
-    border-radius: 20px;
-    padding: 25px;
+.circle2{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:var(--color2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
 }
-
-.circle2 {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: var(--color2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.circle1 {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #45A5EC;
+.circle1{
+  width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#45A5EC; 
     margin-left: 12px;
     padding: 13px;
 }
-
-.about-text-btn-text-head {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--color5);
-    line-height: 1;
+.about-text-btn-text-head{
+    font-size:28px;
+    font-weight:600;
+    color:var(--color5);
+    line-height:1;
 }
 
-.cmn-btn1 p {
-    font-size: 16px;
-    margin-top: 8px;
+.cmn-btn1 p{
+    font-size:16px;
+    margin-top:8px;
 }
-
-/* about page section 3  */
-.milestone {
+/* about page section 3  */ 
+.milestone{
     background-image: url("../images/about-us/miletstone.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 620px;
     width: 100%;
-
-}
-
-.box {
+  
+} 
+.box{
     box-shadow: 4px 0 22.9px 0 rgba(0, 0, 0, 0.19);
-    min-height: 300px;
+    min-height: 300px; 
     width: 100%;
-    background-color: var(--color2);
+    background-color:var(--color2) ;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.9s ease;
-}
-
-.box:hover {
-    background-color: var(--color4);
-}
-
-.box:hover .milestone-head {
+} 
+.box:hover{
+    background-color: var(--color4); 
+}  
+.box:hover .milestone-head{
     color: var(--color2);
 }
-
-.milestone-head {
+.milestone-head{
     color: var(--color6);
-
+    
 }
-
-.box:hover .milestone-head-sub {
-    color: var(--color2);
-
+.box:hover .milestone-head-sub{
+    color: var(--color2); 
+ 
 }
-
-.milestone-description {
-
+.milestone-description{
+  
     display: none;
     opacity: 0;
     font-size: 12px;
-
-}
-
-.box:hover .milestone-description {
-    display: block;
-    color: var(--color2);
-    opacity: 1;
+    
+} 
+.box:hover .milestone-description{
+    display:block ;
+    color: var(--color2); 
+    opacity: 1; 
     transform: translateY(10px);
-}
+} 
 
-.circle4 {
+.circle4{
     width: 70px;
     height: 70px;
     padding: 23px;
     background-color: #45A5EC;
     border-radius: 50%;
 }
-
-.milestone-head {
+.milestone-head{
     font-size: 24px;
     font-family: var(--outfit-r);
-}
-
+} 
 /* section 4 (speak sucess) */
-.speak-sucess-text {
-
+.speak-sucess-text{
+   
     color: var(--color1);
-}
-
-.speak-sucess-head {
+} 
+.speak-sucess-head{
     color: var(--color5);
 
-}
-
-.box3 {
-    padding: 10px 28px;
-    background: linear-gradient(#FFFFFF, #FFFFFF)padding-box, linear-gradient(to top, #F0F9FE, #3089E0, #F0F9FE);
-    border-right: 2px solid transparent;
-}
-
-.speak-sucess-img {
+} 
+.box3{
+padding: 10px 28px;
+background: linear-gradient(#FFFFFF,#FFFFFF)padding-box ,linear-gradient(to top ,#F0F9FE , #3089E0 ,#F0F9FE) ;
+border-right: 2px solid transparent;
+} 
+ 
+.speak-sucess-img{
     border-radius: 20px;
 }
 
-.speak-sucess-img img {
+.speak-sucess-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.speak-sucess-img::before {
+.speak-sucess-img::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, #FFFFFF, rgba(255, 255, 255, 0.632), rgba(255, 255, 255, 0.151), transparent);
+     background:linear-gradient(to top,#FFFFFF ,rgba(255, 255, 255, 0.632),rgba(255, 255, 255, 0.151),transparent);
 }
 
-/* fourth section */
-.box4 {
+
+/* fourth section */ 
+.box4{
     padding: 40px;
     min-height: 252px;
-    background-color: var(--color2);
-    box-shadow: 15px 0 29.2px 0 rgba(0, 0, 0, 0.763);
+    background-color: var(--color2); 
+    box-shadow: 15px 0  29.2px  0 rgba(0, 0, 0, 0.763); 
     border-radius: 20px;
 
 }
 
+.download-mobile-us-btn-text{
+    color: var(--color2);
+}
 
 
 
+/* =========================
+        1200px
+========================= */
+@media (max-width:1200px){
 
-@media (max-width:1200px) {
-    .about-fixnow img {
-        width: 100%;
-        min-height: auto;
+    /* About Banner */
+    .about-us-banner{
+        min-height:550px;
     }
 
-    .cmn-btn1 {
-        width: 280px;
+    .about-us-banner p{
+        font-size:28px;
     }
 
-    .about-btn {
-        padding: 15px 35px;
+    /* About FixNow */
+    .about-fixnow img{
+        width:100%;
+        min-height:auto;
     }
 
-    .milestone .col-lg-2 {
-        width: 33.33%;
-        margin-bottom: 30px;
+    .about-text{
+        font-size:17px;
     }
 
-    .box {
-        padding: 25px 15px;
+    .cmn-btn1{
+        width:280px;
     }
 
-    .milestone-head {
-        font-size: 22px;
+    .about-btn{
+        padding:15px 35px;
     }
 
-    .milestone-head-sub {
-        font-size: 18px;
+    .about-text-btn-text-head{
+        font-size:26px;
     }
 
-    .milestone-description {
-        font-size: 15px;
+    /* Milestone */
+
+    .milestone{
+        min-height:auto;
+    }
+
+    .milestone .col-lg-2{
+        width:33.33%;
+        margin-bottom:30px;
+    }
+
+    .box{
+        padding:25px 15px;
+    }
+
+    .circle4{
+        width:68px;
+        height:68px;
+    }
+
+    .milestone-head{
+        font-size:22px;
+    }
+
+    .milestone-head-sub{
+        font-size:18px;
+    }
+
+    .milestone-description{
+        font-size:15px;
+    } 
+
+        /* Speak Success */
+
+    .box3{
+        padding:10px 18px;
+    }
+
+    .speak-sucess-head{
+        font-size:28px;
+    }
+
+    .speak-sucess-text{
+        font-size:18px;
+    }
+
+    .box3 p:last-child{
+        font-size:15px;
+    }
+
+    .speak-sucess-img{
+        border-radius:18px;
+    }
+
+    /* Founder Desk */
+
+    .founder-desk img{
+        width:100%;
+        height:auto;
+    }
+
+    .founder-desk p{
+        font-size:17px;
+    }
+
+    /* Download App */
+
+    .box4{
+        padding:30px;
+        min-height:220px;
+    }
+
+    .download-mobile-us-btn-text{
+        font-size:16px;
+    }
+
+}
+
+
+/* =========================
+        991px
+========================= */
+
+@media (max-width:991px){
+
+    /* About Banner */
+
+    .about-us-banner{
+        min-height:500px;
+        text-align:center;
+    }
+
+    .about-us-banner p{
+        font-size:24px;
+    }
+
+    /* About FixNow */
+
+    .about-fixnow figure{
+        margin-bottom:40px;
+    }
+
+    .about-fixnow img{
+        margin:0 auto;
+        display:block;
+    }
+
+    .cmn-btn1{
+        width:320px;
+        margin-top:40px;
+    }
+
+    /* Milestone */
+
+    .milestone .col-lg-2{
+        width:50%;
+        margin-bottom:30px;
+    }
+
+    .heading-2{
+        font-size:38px;
+    }
+
+    .circle4{
+        width:65px;
+        height:65px;
+    }
+
+    .milestone-head{
+        font-size:20px;
+    }
+
+    .milestone-head-sub{
+        font-size:17px;
+    }
+
+    .milestone-description{
+        font-size:15px;
+    }
+     /* Speak Success */
+
+    .speak-sucess .row{
+        text-align:center;
+    }
+
+    .speak-sucess .cmn-gap2{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .box3{
+        width:30%;
+        margin:10px;
+        padding:15px;
+    }
+
+    .speak-sucess-img{
+        max-width:500px;
+        margin:40px auto 0;
+    }
+
+    /* Founder Desk */
+
+    .founder-desk .row{
+        text-align:center;
+    }
+
+    .founder-desk img{
+        margin-bottom:40px;
+    }
+
+    /* Download App */
+
+    .box4{
+        margin-bottom:30px;
     }
 }
 
-@media (max-width:992px) {
-    .about-fixnow figure {
-        margin-bottom: 40px;
+
+/* =========================
+        780px
+========================= */
+
+@media (max-width:780px){
+
+    /* About Banner */
+
+    .about-us-banner{
+        min-height:450px;
     }
 
-    .about-fixnow img {
-        margin: 0 auto;
+    .about-us-banner p{
+        font-size:22px;
     }
 
-    .cmn-btn1 {
-        margin-top: 40px;
-        width: 320px;
+    /* About FixNow */
+
+    .about-fixnow h3{
+        font-size:28px;
     }
 
-    .milestone {
-        min-height: auto;
+    .about-text{
+        font-size:16px;
     }
 
-    .milestone .col-lg-2 {
-        width: 50%;
-        margin-bottom: 30px;
+    .about-btn{
+        width:100%;
+        max-width:280px;
     }
 
-    .heading-2 {
-        font-size: 38px;
+    .about-fixnow .justify-content-between{
+        flex-direction:column;
+        align-items:center;
     }
 
-    .circle4 {
-        width: 70px;
-        height: 70px;
+    .cmn-btn1{
+        width:280px;
     }
 
-    .milestone-head {
-        font-size: 20px;
+    /* Milestone */
+
+    .milestone .col-lg-2{
+        width:50%;
     }
 
-    .milestone-head-sub {
-        font-size: 17px;
+    .heading-2{
+        font-size:34px;
     }
 
-    .milestone-description {
-        font-size: 15px;
-    }
-}
-
-@media (max-width:768px) {
-
-    /* about us page */
-
-    .about-fixnow h3 {
-        font-size: 28px;
+    .circle4{
+        width:60px;
+        height:60px;
     }
 
-    .about-text {
-        font-size: 16px;
+    .milestone-head{
+        font-size:19px;
     }
 
-    .about-btn {
-        width: 100%;
-        max-width: 280px;
+    .milestone-head-sub{
+        font-size:16px;
     }
 
-    .about-fixnow .justify-content-between {
-        flex-direction: column;
-        align-items: center;
+    .milestone-description{
+        font-size:14px;
+    }
+    /* Speak Success */
+
+    .heading-2{
+        font-size:34px;
     }
 
-    .cmn-btn1 {
-        width: 280px;
+    .speak-sucess-text{
+        font-size:16px;
     }
 
-    .milestone .col-lg-2 {
-        width: 50%;
+    .box3{
+        width:45%;
+        margin:8px;
     }
 
-    .heading-2 {
-        font-size: 34px;
+    .speak-sucess-head{
+        font-size:24px;
     }
 
-    .circle4 {
-        width: 65px;
-        height: 65px;
+    /* Founder Desk */
+
+    .founder-desk h2{
+        font-size:34px;
     }
 
-    .milestone-head {
-        font-size: 19px;
+    .founder-desk p{
+        font-size:16px;
     }
 
-    .milestone-head-sub {
-        font-size: 16px;
-    }
+    /* Download App */
 
-    .milestone-description {
-        font-size: 14px;
-    }
-}
-
-@media (max-width:576px) {
-
-    /* about us page */
-    .about-fixnow h3 {
-        font-size: 24px;
-    }
-
-    .subheading {
-        font-size: 20px;
-    }
-
-    .about-fixnow p {
-        font-size: 15px;
-    }
-
-    .about-btn {
-        max-width: 100%;
-    }
-
-    .about-fixnow .justify-content-between {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .circle1 {
-        width: 40px;
-        height: 40px;
-        padding: 11px;
-    }
-
-    .cmn-btn1 {
-        width: 100%;
-    }
-
-    .about-text-btn-text-head {
-        font-size: 24px;
-    }
-
-    .milestone .col-lg-2 {
-        width: 100%;
-    }
-
-    .heading-2 {
-        font-size: 30px;
-    }
-
-    .box {
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    .circle4 {
-        width: 60px;
-        height: 60px;
-    }
-
-    .milestone-head {
-        font-size: 18px;
-    }
-
-    .milestone-head-sub {
-        font-size: 15px;
-    }
-
-    .milestone-description {
-        font-size: 14px;
+    .box4{
+        padding:25px;
     }
 }
 
-@media (max-width:480px) {
 
-    /* about us page */
-    .about-fixnow .d-flex.align-items-center {
-        flex-wrap: wrap;
-        justify-content: center;
+/* =========================
+        545px
+========================= */
+
+@media (max-width:545px){
+
+    /* About Banner */
+
+    .about-us-banner{
+        min-height:380px;
     }
 
-    .circle1 {
-        margin: 20px 0 10px;
+    .about-us-banner p{
+        font-size:18px;
     }
 
-    .cmn-gap3 {
-        padding-left: 0;
-        text-align: center;
+    /* About FixNow */
+
+    .about-fixnow h3{
+        font-size:24px;
     }
 
-    .cmn-btn1 {
-        padding: 20px;
+    .subheading{
+        font-size:20px;
     }
 
-    .heading-2 {
-        font-size: 26px;
+    .about-fixnow p{
+        font-size:15px;
     }
 
-    .box {
-        padding: 20px 15px;
+    .about-btn{
+        max-width:100%;
     }
 
-    .circle4 {
-        width: 55px;
-        height: 55px;
+    .about-fixnow .justify-content-between{
+        flex-direction:column;
+        align-items:center;
     }
 
-    .circle4 svg {
-        width: 24px;
-        height: 24px;
+    .cmn-btn1{
+        width:100%;
     }
 
-    .milestone-head {
-        font-size: 17px;
+    .circle1{
+        width:40px;
+        height:40px;
+        padding:11px;
     }
 
-    .milestone-head-sub {
-        font-size: 14px;
+    .about-text-btn-text-head{
+        font-size:24px;
     }
 
-    .milestone-description {
-        font-size: 13px;
-        line-height: 22px;
+    /* Milestone */
+
+    .milestone .col-lg-2{
+        width:100%;
+    }
+
+    .heading-2{
+        font-size:30px;
+    }
+
+    .box{
+        max-width:350px;
+        margin:0 auto;
+    }
+     /* Speak Success */
+
+    .heading-2{
+        font-size:28px;
+    }
+
+    .speak-sucess-text{
+        font-size:15px;
+    }
+
+    .box3{
+        width:100%;
+        margin:8px 0;
+        padding:14px;
+    }
+
+    .speak-sucess-head{
+        font-size:22px;
+    }
+
+    .box3 p:last-child{
+        font-size:15px;
+    }
+
+    .speak-sucess-img{
+        margin-top:30px;
+    }
+
+    /* Founder Desk */
+
+    .founder-desk h2{
+        font-size:28px;
+    }
+
+    .founder-desk p{
+        font-size:15px;
+    }
+
+    /* Download App */
+
+    .box4{
+        padding:20px;
     }
 }
 
-@media (max-width:320px) {
 
-    /* about-us page */
+/* =========================
+        480px
+========================= */
 
-    .about-fixnow h3 {
-        font-size: 20px;
+@media (max-width:480px){
+
+    /* About Banner */
+
+    .about-us-banner{
+        min-height:320px;
     }
 
-    .about-btn {
-        font-size: 15px;
-        padding: 14px 20px;
+    .about-us-banner p{
+        font-size:16px;
     }
 
-    .about-text-btn-text-head {
-        font-size: 20px;
+    /* About FixNow */
+
+    .about-fixnow .d-flex.align-items-center{
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    .about-fixnow .justify-content-between {
-        flex-direction: column;
-        align-items: center;
+    .circle1{
+        margin:20px 0 10px;
     }
 
-    .cmn-btn1 {
-        min-height: 100px;
-        padding: 15px;
+    .cmn-gap3{
+        padding-left:0;
+        text-align:center;
     }
 
-    .circle2 {
-        width: 45px;
-        height: 45px;
+    .cmn-btn1{
+        padding:20px;
     }
 
-    .heading-2 {
-        font-size: 22px;
+    /* Milestone */
+
+    .heading-2{
+        font-size:26px;
     }
 
-    .box {
-        padding: 18px 12px;
+    .box{
+        padding:20px 15px;
     }
 
-    .circle4 {
-        width: 50px;
-        height: 50px;
+    .circle4{
+        width:55px;
+        height:55px;
     }
 
-    .circle4 svg {
-        width: 20px;
-        height: 20px;
+    .circle4 svg{
+        width:24px;
+        height:24px;
+    }
+    /* Speak Success */
+
+    .heading-2{
+        font-size:24px;
     }
 
-    .milestone-head {
-        font-size: 16px;
+    .speak-sucess-text{
+        font-size:14px;
     }
 
-    .milestone-head-sub {
-        font-size: 13px;
+    .box3{
+        padding:12px;
     }
 
-    .milestone-description {
-        font-size: 12px;
-        line-height: 20px;
+    .speak-sucess-head{
+        font-size:20px;
+    }
+
+    .box3 p:last-child{
+        font-size:14px;
+    }
+
+    /* Founder Desk */
+
+    .founder-desk h2{
+        font-size:24px;
+    }
+
+    .founder-desk p{
+        font-size:14px;
+    }
+
+    /* Download App */
+
+    .box4{
+        padding:18px;
+    }
+
+    .download-mobile-us-btn-text{
+        font-size:15px;
+    }
+}
+
+
+/* =========================
+        320px
+========================= */
+
+@media (max-width:320px){
+
+    /* About Banner */
+
+    .about-us-banner{
+        min-height:280px;
+    }
+
+    .about-us-banner p{
+        font-size:14px;
+    }
+
+    /* About FixNow */
+
+    .about-fixnow h3{
+        font-size:20px;
+    }
+
+    .about-btn{
+        font-size:15px;
+        padding:14px 20px;
+    }
+
+    .about-text-btn-text-head{
+        font-size:20px;
+    }
+
+    .cmn-btn1{
+        min-height:100px;
+        padding:15px;
+    }
+
+    .circle2{
+        width:45px;
+        height:45px;
+    }
+
+    /* Milestone */
+
+    .heading-2{
+        font-size:22px;
+    }
+
+    .box{
+        padding:18px 12px;
+    }
+
+    .circle4{
+        width:50px;
+        height:50px;
+    }
+
+    .circle4 svg{
+        width:20px;
+        height:20px;
+    }
+
+    .milestone-head{
+        font-size:16px;
+    }
+
+    .milestone-head-sub{
+        font-size:13px;
+    }
+
+    .milestone-description{
+        font-size:12px;
+        line-height:20px;
+    }
+        /* Speak Success */
+
+    .heading-2{
+        font-size:20px;
+    }
+
+    .speak-sucess-text{
+        font-size:13px;
+    }
+
+    .box3{
+        padding:10px;
+    }
+
+    .speak-sucess-head{
+        font-size:18px;
+    }
+
+    .box3 p:last-child{
+        font-size:13px;
+    }
+
+    /* Founder Desk */
+
+    .founder-desk h2{
+        font-size:20px;
+    }
+
+    .founder-desk p{
+        font-size:13px;
+    }
+
+    /* Download App */
+
+    .box4{
+        padding:15px;
+        min-height:auto;
+    }
+
+    .download-mobile-us-btn-text{
+        font-size:14px;
     }
 }
