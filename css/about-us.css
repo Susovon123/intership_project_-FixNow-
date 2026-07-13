@@ -19,16 +19,19 @@
     --albert-sans-r: "albert-sans-r";
 }
 .about-us-banner{
-        background-image: url("../images/2.hero.png") , radial-gradient(
-        circle,
-         rgba(255, 255, 255, 0.904) 48%,
-    rgba(255,255,255,0.88) 84%,
-    rgba(255,255,255,0.99) 91%);
-     background-size: cover; 
-     background-position: center;
-     min-height: 650px;
- 
-} 
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.32) 0%,
+            rgba(255,255,255,0.50) 50%,
+            rgba(255,255,255,1) 100%
+        ),
+        url("../images/2.hero.png");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+}
 
 
 .about-us-banner .heading-1{
@@ -180,6 +183,15 @@ border-right: 2px solid transparent;
      background:linear-gradient(to top,#FFFFFF ,rgba(255, 255, 255, 0.632),rgba(255, 255, 255, 0.151),transparent);
 }
 
+/* fourth section */ 
+.box4{
+    padding: 40px;
+    min-height: 252px;
+    background-color: var(--color2); 
+    box-shadow: 15px 0  29.2px  0 rgba(0, 0, 0, 0.763); 
+    border-radius: 20px;
+
+}
 
 
 
