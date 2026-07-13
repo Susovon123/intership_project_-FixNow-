@@ -78,8 +78,7 @@ li {
 /* contact-banner starts */
 .contact-banner {
     min-height: 644px;
-    background: linear-gradient(rgba(26, 49, 81, .55), rgba(26, 49, 81, .40)),
-        url("../images/contact-us/contact-us-banner-img.png");
+    background: url("../images/contact-us/contact-us-banner-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
