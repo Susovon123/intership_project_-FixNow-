@@ -140,11 +140,11 @@ p {
 }
 
 .subheading {
-    /* color: var(--color13); */
+    color: var(--color-15);
     font-family: var(--outfit-r);
-    /* font-weight: 500; */
+    font-weight: 500;
     font-size: 24px;
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
 
 }
 

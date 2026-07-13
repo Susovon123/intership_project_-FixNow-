@@ -75,84 +75,6 @@ li {
 
 }
 
-h1,
-.heading-1 {
-    font-family: var(--outfit-r);
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--color5);
-    text-transform: capitalize;
-}
-
-h2,
-.heading-2 {
-    color: var(--color10);
-    font-family: var(--outfit-r);
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1.2;
-    text-transform: capitalize;
-}
-
-
-p {
-    color: var(--color1);
-    font-family: var(--albert-sans-r);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 0;
-    text-transform: capitalize;
-}
-
-.subheading {
-    color: var(--color13);
-    font-family: var(--outfit-r);
-    font-weight: 500;
-    font-size: 24px;
-    text-transform: capitalize;
-
-}
-
-.cmn-btn {
-    padding: 16px 48px;
-    background-color: var(--color4);
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    border-radius: 20px;
-    color: var(--color8);
-    font-family: var(--albert-sans-r);
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.cmn-btn::before {
-    background-color: var(--color6);
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    transform: translateX(-100%);
-    transition: all 0.4s ease-in;
-}
-
-.cmn-btn:hover::before {
-    transform: translateX(0);
-}
-
-.cmn-btn:hover {
-    color: #fff;
-}
-
-.cmn-gap {
-    padding: 100px 0;
-}
-
 /* contact-banner starts */
 .contact-banner {
     min-height: 644px;
@@ -251,11 +173,11 @@ p {
 }
 
 .contact-left h2 {
-    font-size: 28px;
+    font-size: 40px;
     line-height: 1.2;
     margin-bottom: 36px;
     max-width: 590px;
-    color: var(--color5);
+    color: var(--color10);
 }
 
 .contact-left p {
@@ -342,9 +264,9 @@ p {
 }
 
 
-.contact-form h2 {
-    font-size: 40px;
+.contact-form h3 {
     color: var(--color5);
+    font-weight: 600;
     margin-bottom: 16px;
     line-height: 1.2;
 }
@@ -463,7 +385,7 @@ p {
         font-size: 17px;
     }
 
-    .contact-form h2 {
+    .contact-form h3 {
         font-size: 34px;
     }
 
@@ -542,7 +464,7 @@ p {
         padding: 28px;
     }
 
-    .contact-form h2 {
+    .contact-form h3 {
         font-size: 32px;
     }
 }
@@ -610,7 +532,7 @@ p {
         padding: 24px;
     }
 
-    .contact-form h2 {
+    .contact-form h3 {
         font-size: 28px;
     }
 
@@ -709,7 +631,7 @@ p {
         padding: 20px;
     }
 
-    .contact-form h2 {
+    .contact-form h3 {
         font-size: 24px;
     }
 
@@ -805,7 +727,7 @@ p {
         padding: 18px;
     }
 
-    .contact-form h2 {
+    .contact-form h3 {
         font-size: 22px;
     }
 
