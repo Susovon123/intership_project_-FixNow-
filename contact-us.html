@@ -1,315 +1,471 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!-- css link -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
-  <body>
-    <!-- top bar -->
-    <div class="d-flex justify-content-between header-main">
-      <div class="header-main-section1 d-flex align-items-center">
-        <p class="header-main-text">
-          Trusted Local Services, Right When You Need Them.
-        </p>
-      </div>
-      <div class="header-main-section2 d-flex align-items-center">
-        <select name="location" id="location">
-          <option value="location">location</option>
-        </select>
-        <p>Help & Support</p>
-        <a href="#"> work with Us </a>
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- top bar -->
+  <div class="d-flex justify-content-between header-main">
+    <div class="header-main-section1 d-flex align-items-center">
+      <p class="header-main-text">
+        Trusted Local Services, Right When You Need Them.
+      </p>
+    </div>
+    <div class="header-main-section2 d-flex align-items-center">
+      <select name="location" id="location">
+        <option value="location">location</option>
+      </select>
+      <p>Help & Support</p>
+      <a href="#"> work with Us </a>
+    </div>
+  </div>
+
+  <!-- starting Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/Frame 14.png" alt="logo-image" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="circle">
+          <div class="search-box">
+            <input type="search" id="searchInput" placeholder="Search...">
+
+            <button id="searchBtn">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 15L22 22M9.16667 17.3333C4.65634 17.3333 1 13.677 1 9.16667C1 4.65634 4.65634 1 9.16667 1C13.677 1 17.3333 4.65634 17.3333 9.16667C17.3333 13.677 13.677 17.3333 9.16667 17.3333Z"
+                  stroke="#1A3151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </button>
+          </div>
+        </div>
+        <div class="circle">
+          <a href="#">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 22.167C21 19.5897 17.866 17.5003 14 17.5003C10.134 17.5003 7 19.5897 7 22.167M14 14.0003C11.4227 14.0003 9.33333 11.911 9.33333 9.33366C9.33333 6.75633 11.4227 4.66699 14 4.66699C16.5773 4.66699 18.6667 6.75633 18.6667 9.33366C18.6667 11.911 16.5773 14.0003 14 14.0003Z"
+                stroke="#1A3151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="#">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.5 3.5H3.81307C4.36581 3.5 4.64267 3.5 4.86811 3.59972C5.06688 3.68765 5.23683 3.82921 5.35937 4.00871C5.49814 4.21197 5.54825 4.48338 5.64827 5.02515L8.16671 18.6667L20.3254 18.6667C20.8542 18.6667 21.1194 18.6667 21.3384 18.5732C21.5318 18.4907 21.6987 18.3571 21.8226 18.1871C21.9627 17.9949 22.0221 17.7376 22.1407 17.2236L22.1416 17.22L23.9724 9.28662L23.9728 9.28496C24.1527 8.50518 24.2429 8.11435 24.1439 7.80778C24.057 7.53879 23.8741 7.31073 23.6315 7.16557C23.3549 7 22.9551 7 22.1535 7H6.41667M21 24.5C20.3557 24.5 19.8333 23.9777 19.8333 23.3333C19.8333 22.689 20.3557 22.1667 21 22.1667C21.6443 22.1667 22.1667 22.689 22.1667 23.3333C22.1667 23.9777 21.6443 24.5 21 24.5ZM9.33333 24.5C8.689 24.5 8.16667 23.9777 8.16667 23.3333C8.16667 22.689 8.689 22.1667 9.33333 22.1667C9.97767 22.1667 10.5 22.689 10.5 23.3333C10.5 23.9777 9.97767 24.5 9.33333 24.5Z"
+                stroke="#1A3151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <a href="#" class="cmn-btn">Sign Up</a>
       </div>
     </div>
+  </nav>
 
-    <!-- starting Navbar -->
-    <nav class="navbar navbar-expand-lg">
+  <main>
+    <!-- contact banner starts -->
+    <section class="contact-banner position-relative overflow-hidden d-flex align-items-center">
+
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="images/Frame 14.png" alt="logo-image"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Service.html"
-                >Service</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="about-us.html"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="contact-us.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-                   <div class="circle">
-                 <div class="search-box">
-    <input type="search" id="searchInput" placeholder="Search...">
 
-    <button id="searchBtn">
-        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 15L22 22M9.16667 17.3333C4.65634 17.3333 1 13.677 1 9.16667C1 4.65634 4.65634 1 9.16667 1C13.677 1 17.3333 4.65634 17.3333 9.16667C17.3333 13.677 13.677 17.3333 9.16667 17.3333Z" stroke="#1A3151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+        <div class="row justify-content-center">
 
-    </button>
-</div>
-          </div>
-          <div class="circle">
-            <a href="#">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 22.167C21 19.5897 17.866 17.5003 14 17.5003C10.134 17.5003 7 19.5897 7 22.167M14 14.0003C11.4227 14.0003 9.33333 11.911 9.33333 9.33366C9.33333 6.75633 11.4227 4.66699 14 4.66699C16.5773 4.66699 18.6667 6.75633 18.6667 9.33366C18.6667 11.911 16.5773 14.0003 14 14.0003Z"
-                  stroke="#1A3151"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="circle">
-            <a href="#">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.5 3.5H3.81307C4.36581 3.5 4.64267 3.5 4.86811 3.59972C5.06688 3.68765 5.23683 3.82921 5.35937 4.00871C5.49814 4.21197 5.54825 4.48338 5.64827 5.02515L8.16671 18.6667L20.3254 18.6667C20.8542 18.6667 21.1194 18.6667 21.3384 18.5732C21.5318 18.4907 21.6987 18.3571 21.8226 18.1871C21.9627 17.9949 22.0221 17.7376 22.1407 17.2236L22.1416 17.22L23.9724 9.28662L23.9728 9.28496C24.1527 8.50518 24.2429 8.11435 24.1439 7.80778C24.057 7.53879 23.8741 7.31073 23.6315 7.16557C23.3549 7 22.9551 7 22.1535 7H6.41667M21 24.5C20.3557 24.5 19.8333 23.9777 19.8333 23.3333C19.8333 22.689 20.3557 22.1667 21 22.1667C21.6443 22.1667 22.1667 22.689 22.1667 23.3333C22.1667 23.9777 21.6443 24.5 21 24.5ZM9.33333 24.5C8.689 24.5 8.16667 23.9777 8.16667 23.3333C8.16667 22.689 8.689 22.1667 9.33333 22.1667C9.97767 22.1667 10.5 22.689 10.5 23.3333C10.5 23.9777 9.97767 24.5 9.33333 24.5Z"
-                  stroke="#1A3151"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a> 
+          <div class="col-lg-12">
+
+            <div class="contact-banner-content position-relative text-center">
+
+              <h1>Contact Us</h1>
+
+              <p>We Are Here To Help!</p>
+
             </div>
-   
-          <a href="#" class="cmn-btn">Sign Up</a>
-        </div>
-      </div>
-    </nav>
 
-    <main>
-      <!-- body part -->
-    </main>
-
-    <!-- footer starts -->
-    <footer class="footer">
-      <div class="container">
-        <!-- footer-top -->
-
-        <div
-          class="row align-items-center footer-top text-center text-lg-start"
-        >
-          <!-- footer-logo -->
-
-          <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
-            <a href="index.html" class="footer-logo">
-              <img
-                src="./images/footer-logo.png"
-                alt="footer-logo"
-                loading="lazy"
-              />
-            </a>
           </div>
 
-          <!-- Newsletter -->
+        </div>
 
-          <div class="col-lg-7">
-            <div class="newsletter text-center text-lg-start">
-              <div class="footer-heading">Stay Updated</div>
+      </div>
+
+    </section>
+    <!-- contact banner ends -->
+
+    <!-- contact area starts -->
+
+    <section class="contact-area cmn-gap">
+
+      <div class="container position-relative">
+
+        <div class="row align-items-center">
+
+          <!-- Contact Information Starts -->
+
+          <div class="col-lg-6 mb-3 mb-lg-0">
+
+            <div class="contact-left">
+
+              <span class="subheading d-inline-block mb-3">
+                Get In Touch
+              </span>
+
+              <h2>
+                We're here to answer your questions and help you find the right solutions. Reach out to us and our team
+                will get back to you as soon as possible.
+              </h2>
 
               <p>
-                Get the latest service offers, home care tips, and exclusive
-                discounts delivered straight to your inbox.
+                Have a question, need assistance, or want to work with us? We'd love to hear from you. Connect with our
+                team through phone, email, or by visiting our office.
               </p>
 
-              <form
-                class="newsletter-form d-flex align-items-center"
-                action="#"
-              >
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address.."
-                  required
-                />
+              <!-- Contact Card Starts -->
 
-                <button type="submit">
-                  <svg
-                    width="19"
-                    height="16"
-                    viewBox="0 0 19 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 8H17.3333M10.3333 15L17.3333 8L10.3333 1"
-                      stroke="#111827"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
+              <div class="contact-card d-flex justify-content-between">
+
+                <!-- Phone -->
+
+                <div class="contact-box phone-box d-flex align-items-center">
+
+                  <div class="contact-icon d-flex justify-content-center align-items-center flex-shrink-0">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                      <path
+                        d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+
+                  </div>
+
+                  <div class="contact-content">
+
+                    <span class="d-block">Phone</span>
+
+                    <a href="tel:+919876543210">
+                      +91 98765 43210
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="contact-box email-box d-flex align-items-center">
+
+                  <div class="contact-icon d-flex justify-content-center align-items-center flex-shrink-0">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                      <path
+                        d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+
+                  <div class="contact-content">
+
+                    <span class="d-block">Email</span>
+
+                    <a href="mailto:info@fixnow.com">
+                      info@fixnow.com
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- Contact Card Ends -->
+
+
+              <!-- Map Starts -->
+
+              <div class="contact-map overflow-hidden">
+
+                <iframe class="d-block"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.28723658479754!2d88.36138322092192!3d22.55680982806476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277023e8c0195%3A0x8649e48a66b8ace6!2sAngel%20Nursing%20Home%20Aaga%20mehdy%20street!5e0!3m2!1sen!2sin!4v1783831368741!5m2!1sen!2sin"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+              </div>
+
+              <!-- Map Ends -->
+
+            </div>
+
+          </div>
+
+          <!-- Contact Information Ends -->
+
+
+          <!-- Contact Form Starts -->
+
+          <div class="col-lg-6">
+
+            <div class="contact-form position-relative">
+
+              <h2>
+                Send Us A Message
+              </h2>
+
+              <p>
+                Have a question or need assistance? Fill out the form below, and our team will get back to you as soon
+                as possible.
+              </p>
+
+              <form action="#">
+
+                <div class="row">
+
+                  <div class="col-lg-12 mb-4">
+
+                    <label for="name">
+                      Name
+                    </label>
+
+                    <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
+
+                  </div>
+
+                  <div class="col-lg-12 mb-4">
+
+                    <label for="email">
+                      Email
+                    </label>
+
+                    <input type="email" id="email" class="form-control" placeholder="Enter Your Email">
+
+                  </div>
+
+                  <div class="col-lg-12 mb-4">
+
+                    <label for="subject">
+                      Subject
+                    </label>
+
+                    <input type="text" id="subject" class="form-control" placeholder="What can we help you with">
+
+                  </div>
+
+                  <div class="col-lg-12 mb-4">
+
+                    <label for="message">
+                      Message
+                    </label>
+
+                    <textarea id="message" rows="6" class="form-control"
+                      placeholder="Tell us about your enquiry"></textarea>
+
+                  </div>
+
+                  <div class="col-lg-12 text-center">
+
+                    <input type="submit" value="Send Now" class="cmn-btn border-0">
+
+                  </div>
+
+                </div>
+
               </form>
+
             </div>
+
+          </div>
+
+          <!-- Contact Form Ends -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- contact area ends -->
+  </main>
+
+  <!-- footer starts -->
+  <footer class="footer">
+    <div class="container">
+      <!-- footer-top -->
+
+      <div class="row align-items-center footer-top text-center text-lg-start">
+        <!-- footer-logo -->
+
+        <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
+          <a href="index.html" class="footer-logo">
+            <img src="./images/footer-logo.png" alt="footer-logo" loading="lazy" />
+          </a>
+        </div>
+
+        <!-- Newsletter -->
+
+        <div class="col-lg-7">
+          <div class="newsletter text-center text-lg-start">
+            <div class="footer-heading">Stay Updated</div>
+
+            <p>
+              Get the latest service offers, home care tips, and exclusive
+              discounts delivered straight to your inbox.
+            </p>
+
+            <form class="newsletter-form d-flex align-items-center" action="#">
+              <input type="email" name="email" placeholder="Email Address.." required />
+
+              <button type="submit">
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8H17.3333M10.3333 15L17.3333 8L10.3333 1" stroke="#111827" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
-        <!-- footer-middle -->
+      </div>
+      <!-- footer-middle -->
 
-        <div class="row footer-middle">
-          <!-- Contact -->
+      <div class="row footer-middle">
+        <!-- Contact -->
 
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="foot-head">Contact Info</div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="foot-head">Contact Info</div>
 
-            <ul class="footer-links">
-              <li class="address">
-                28 Park Street, Kolkata, West Bengal India - 700016
-              </li>
-            </ul>
+          <ul class="footer-links">
+            <li class="address">
+              28 Park Street, Kolkata, West Bengal India - 700016
+            </li>
+          </ul>
 
-            <div class="foot-head support-head">Support Care</div>
+          <div class="foot-head support-head">Support Care</div>
 
-            <ul class="footer-links">
-              <li>
-                <a href="tel:+6121234456"> +(612) 123-4456 </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="footer-links">
+            <li>
+              <a href="tel:+6121234456"> +(612) 123-4456 </a>
+            </li>
+          </ul>
+        </div>
 
-          <!-- Quick Links -->
+        <!-- Quick Links -->
 
-          <div class="col-lg-2 col-md-6 mb-5">
-            <div class="foot-head">Pages</div>
+        <div class="col-lg-2 col-md-6 mb-5">
+          <div class="foot-head">Pages</div>
 
-            <ul class="footer-links">
-              <li><a href="#">Home</a></li>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
 
-              <li><a href="#">About</a></li>
+            <li><a href="#">About</a></li>
 
-              <li><a href="#">Service</a></li>
+            <li><a href="#">Service</a></li>
 
-              <li><a href="#">Contact us</a></li>
-            </ul>
-          </div>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
 
-          <!-- Services -->
+        <!-- Services -->
 
-          <div class="col-lg-3 col-md-6 mb-5">
-            <div class="foot-head">Services</div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <div class="foot-head">Services</div>
 
-            <ul class="footer-links">
-              <li><a href="#">house help</a></li>
+          <ul class="footer-links">
+            <li><a href="#">house help</a></li>
 
-              <li><a href="#">house cleaning</a></li>
+            <li><a href="#">house cleaning</a></li>
 
-              <li><a href="#">electrical services</a></li>
+            <li><a href="#">electrical services</a></li>
 
-              <li><a href="#">plumbing</a></li>
+            <li><a href="#">plumbing</a></li>
 
-              <li><a href="#">home repair</a></li>
-            </ul>
-          </div>
+            <li><a href="#">home repair</a></li>
+          </ul>
+        </div>
 
-          <!-- Company -->
+        <!-- Company -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="foot-head">Company</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="foot-head">Company</div>
 
-            <ul class="footer-links">
-              <li><a href="#">help & support</a></li>
+          <ul class="footer-links">
+            <li><a href="#">help & support</a></li>
 
-              <li><a href="#">FAQ's</a></li>
+            <li><a href="#">FAQ's</a></li>
 
-              <li><a href="#">privacy policy</a></li>
+            <li><a href="#">privacy policy</a></li>
 
-              <li><a href="#">terms & conditions</a></li>
+            <li><a href="#">terms & conditions</a></li>
 
-              <li><a href="#">refund policy</a></li>
-            </ul>
+            <li><a href="#">refund policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer-bottom -->
+
+      <div class="row footer-bottom align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="footer-title">
+            Making Everyday Services
+
+            <span> Simple & Reliable </span>
           </div>
         </div>
-        <!-- footer-bottom -->
 
-        <div class="row footer-bottom align-items-center">
-          <div class="col-lg-7 mb-4 mb-lg-0">
-            <div class="footer-title">
-              Making Everyday Services
-
-              <span> Simple & Reliable </span>
+        <div class="col-lg-5">
+          <div class="footer-end">
+            <div class="copyright">
+              ©2026 <a href="./index.html">FIXNOW</a>. All Rights Reserved.
             </div>
-          </div>
 
-          <div class="col-lg-5">
-            <div class="footer-end">
-              <div class="copyright">
-                ©2026 <a href="./index.html">FIXNOW</a>. All Rights Reserved.
-              </div>
+            <div class="footer-social">
+              <a href="#">Facebook</a>
 
-              <div class="footer-social">
-                <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
 
-                <a href="#">Twitter</a>
+              <a href="#">Youtube</a>
 
-                <a href="#">Youtube</a>
-
-                <a href="#">Instagram</a>
-              </div>
+              <a href="#">Instagram</a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- footer ends -->
+    </div>
+  </footer>
+  <!-- footer ends -->
 
-    <!-- bootstrap  js -->
-    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <!-- bootstrap  js -->
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
 
-    <!-- js -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- js -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
